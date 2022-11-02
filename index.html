@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartografía Nómada- Fer Dominguez- 2022</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="anim">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+        <script src="p5.min.js"></script>
+        <script src="sketch.js"></script>
+    </div>
+
+
+    <section class="acerca">
+
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Inicio</a>
+            <a href="descripcion.html">Descripción del Proyecto</a>
+            <a href="https://cartografianomada.wordpress.com/" target="_blank">Blog</a>
+            <a href="origenydestino.html">Origen y Destino</a>
+            <a href="creditos.html">Créditos</a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+
+        <div class="dot"><a class="punto" href="video.html" target="_blank"></a></div>
+        <div class="instrucciones titulo">
+            <h2 class="marco">donde la gente</h2>
+        </div>
+        <div class="dot2"><a class="punto" href="video2.html" target="_blank"></a></div>
+        <div class="instrucciones titulo2">
+            <h2 class="marco">Una cueva</h2>
+        </div>
+        <div id="vid3" class="dot3 oculto"><a class="punto" href="video3.html" target="_blank"></a></div>
+        <div id="t3" class="instrucciones titulo3 oculto">
+            <h2 class="marco">hay abrazos</h2>
+        </div>
+        <div id="vid4" class="dot4 oculto"><a class="punto" href="video4.html" target="_blank"></a></div>
+        <div id="t4" class="instrucciones titulo4 oculto">
+            <h2 class="marco">una mansión</h2>
+        </div>
+        <div id="vid5" class="dot5 oculto"><a class="punto" href="video5.html" target="_blank"></a></div>
+        <div id="t5" class="instrucciones titulo5 oculto">
+            <h2 class="marco">La tierra</h2>
+        </div>
+        <div id="vid6" class="dot6 oculto"><a class="punto" href="video6.html" target="_blank"></a></div>
+        <div id="t6" class="instrucciones titulo6 oculto">
+            <h2 class="marco">como lazos</h2>
+        </div>
+        <div id="vid7" class="dot7 oculto"><a class="punto" href="video7.html" target="_blank"></a></div>
+        <div class="dot7hid"><a class="punto"></a></div>
+        <div id="t7" class="instrucciones titulo7">
+            <h2 class="marco">son sitios</h2>
+        </div>
+        <div id="vid8" class="dot8 oculto"><a class="punto" href="video8.html" target="_blank"></a></div>
+        <div class="dot8hid"><a class="punto"></a></div>
+        <div id="t8" class="instrucciones titulo8">
+            <h2 class="marco">como lugares</h2>
+        </div>
+        <div id="vid9" class="dot9 oculto"><a class="punto" href="video9.html" target="_blank"></a></div>
+        <div class="dot9hid"><a class="punto"></a></div>
+        <div id="t9" class="instrucciones titulo9">
+            <h2 class="marco">y dormir</h2>
+        </div>
+        <div id="vid10" class="dot10 oculto"><a class="punto" href="video10.html" target="_blank"></a></div>
+        <div class="dot10hid"><a class="punto"></a></div>
+        <div id="t10" class="instrucciones titulo10">
+            <h2 class="marco">es un pueblo</h2>
+        </div>
+        <div id="vid11" class="dot11 oculto"><a class="punto" href="video11.html" target="_blank"></a></div>
+        <div class="dot11hid"><a class="punto"></a></div>
+        <div id="t11" class="instrucciones titulo11">
+            <h2 class="marco">Hay caminos</h2>
+        </div>
+        <div id="vid12" class="dot12 oculto"><a class="punto" href="video12.html" target="_blank"></a></div>
+        <div class="dot12hid"><a class="punto"></a></div>
+        <div id="t12" class="instrucciones titulo12">
+            <h2 class="marco">anda</h2>
+        </div>
+        <div id="vid13" class="dot13 oculto"><a class="punto" href="video13.html" target="_blank"></a></div>
+        <div class="dot13hid"><a class="punto"></a></div>
+        <div id="t13" class="instrucciones titulo13">
+            <h2 class="marco">donde cocinar</h2>
+        </div>
+
+        <!-- <img id="r12" class="ruta oculto" src="assets/ruta.png" alt="Ruta">
+        <img id="r11" class="ruta oculto" src="assets/ruta2.png" alt="Ruta">
+        <img id="r10" class="ruta oculto" src="assets/ruta3.png" alt="Ruta">
+        <img id="r7" class="ruta oculto" src="assets/ruta4.png" alt="Ruta">
+        <img id="r4" class="ruta oculto" src="assets/ruta5.png" alt="Ruta">
+        <img id="r8" class="ruta oculto" src="assets/ruta6.png" alt="Ruta">
+        <img id="r13" class="ruta oculto" src="assets/ruta7.png" alt="Ruta">
+        <img id="r5" class="ruta oculto" src="assets/ruta8.png" alt="Ruta">
+        <img id="r4B" class="ruta oculto" src="assets/ruta9.png" alt="Ruta">
+        <img id="r12B" class="ruta oculto" src="assets/ruta10.png" alt="Ruta">
+        <img id="r12C" class="ruta oculto" src="assets/ruta11.png" alt="Ruta">
+        <img id="r9" class="ruta oculto" src="assets/ruta12.png" alt="Ruta">
+        <img id="r11B" class="ruta oculto" src="assets/ruta13.png" alt="Ruta"> -->
+
+        <!-- <div id="vid1" tabindex="-1" class="videolinks oculto">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div> -->
+
+        <!-- <div tabindex="-1" class="videolinks2">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks3">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks4">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks5">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img
+                            src="https://drive.google.com/file/d/1zmDyJySfBgwLpCIQE3QxtKCZ-Mqh3ewV/view"
+                            title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks6">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks7">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks8">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks9">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks10">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks11">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks12">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="videolinks13">
+            <div class="instrucciones">
+                <figure>
+                    <a href="apuntes.html"><img src="assets/i19.png" title="Apuntes sobre la línea imaginaria"
+                            alt="Video- Apuntes sobre la línea imaginaria"></a>
+                </figure>
+            </div>
+        </div> -->
+
+    </section>
+</body>
+
+</html>
